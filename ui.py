@@ -7,3 +7,8 @@ def get_input():
 def show_result(result):
     print(f"Result: {result}")
 
+def check_operation(op):
+    valid_operations = ['+', '-', '*', '/']
+    if op not in valid_operations:
+        raise ValueError(f"Invalid operation. Choose from {valid_operations}.")
+    return True
